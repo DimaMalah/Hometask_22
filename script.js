@@ -6,7 +6,7 @@ const palindrom = {};
 let steps = 1;
 let res = null;
 
-palindromFanc = ((num) => {
+const palindromFanc = ((num) => {
 	res = num + +String(num).split('').reverse().join('');
 	if (+String(res) !== +String(res).split('').reverse().join('')) {
 		steps++
@@ -17,5 +17,5 @@ palindromFanc = ((num) => {
 		return palindrom
 	}
 })
-console.log(palindromFanc(96));
+console.log(palindromFanc(195));
 
